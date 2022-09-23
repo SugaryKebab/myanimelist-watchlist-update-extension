@@ -1,0 +1,22 @@
+{
+    "name": "Myanimelist updater for various websites",
+    "description": "It's a extension for updating myanimelist watchinglist for various websites",
+    "version": "1.0",
+    "manifest_version": 3,
+    "options_page": "options.html",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "webNavigation",
+        "declarativeContent"
+      ],
+  
+ 
+      "content_scripts": [{
+        "matches": [ "https://www.turkanime.co/*" ],
+        "js": [ "content.js" ]
+    }]
+
+
+      
+  }
